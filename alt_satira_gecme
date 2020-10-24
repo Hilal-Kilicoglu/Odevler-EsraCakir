@@ -1,0 +1,4 @@
+# \n ile karakterler alt satıra geçiyor.
+# Boşluklar karakter olarak kabul ediliyor.
+
+print("Algortima \n ve \n Bilgisayar")
