@@ -1,0 +1,19 @@
+#Bu kod, basit bir hesap makinesi kodudur.
+#Toplama, çıkarma, çarpma ve bölme yapar.
+#Aynı anda yalnızca iki sayıyla işlem yapabilir. 
+
+while True:
+    print("Kullanabileceğiniz operatörler: +, -, *, /")
+    sayı1=float(input("Lütfen işlem yapmak istediğiniz ilk sayıyı giriniz: "))
+    sayı2=float(input("Lütfen işlem yapmak istediğiniz ikinci sayıyı giriniz: "))
+    operatör=input("Lütfen işlem operatörünü giriniz: ")
+    if operatör=="+":
+        print("sonuç= ", sayı1+sayı2)
+    elif operatör=="-":
+         print("sonuç= ", sayı-sayı2)
+    elif operatör=="*":
+        print("sonuç= ", sayı1*sayı2)
+    elif operatör=="/":
+        print("sonuç= ", sayı1/sayı2)
+    else:
+        print("Lütfen geçerli bir operatör giriniz.")
