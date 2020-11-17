@@ -1,0 +1,9 @@
+#Bu kod kullanıcıdan bir şifre girmesini ister.
+#Girilen şifrenin 4 haneli olduğunu ve yalnızca rakamlardan oluştuğunu kontrol eder.
+#Koşullara uymuyorsa yeni şifre ister, eğer uyuyorsa girilen veriyi yeni şifre olarak atar.
+
+şifre=input("Lütfen 4 haneli ve yalnızca rakamlardan oluşan bir şifre giriniz: ")
+while len(şifre)!=4 or şifre.isdigit()!=1:
+    print("Girdiğiniz şifre kabul edilmedi. Lütfen tekrar deneyin.")
+    şifre=şifre=input("Lütfen 4 haneli ve yalnızca rakamlardan oluşan bir şifre giriniz: ")
+print("Yeni şifreniz: ", şifre)
