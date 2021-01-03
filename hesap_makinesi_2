@@ -1,0 +1,38 @@
+class Calc(object): #calculator
+
+    def __init__(self,a,b):
+        self.value1=a
+        self.value2=b
+
+    def addition(self):
+        return self.value1+self.value2
+
+    def multiplication(self):
+        return self.value1*self.value2
+
+    def division(self):
+        return self.value1/self.value2
+
+    def substraction(self):
+        return self.value1-self.value2
+
+while True:
+    print("Choose addition(1), multiplication(2), division(3), substrraction(4)")
+    selection=input("select 1, 2, 3 or 4")
+
+    v1=int(input("first value"))
+    v2=int(input("second value"))
+
+    c1=Calc(v1,v2)
+    if selection == "1":
+        add_result=c1.addition()
+        print("Addition: ", add_result)
+    elif selection=="2":
+        multiply_result=c1.multiplication()
+        print("Multiplication: ",multiply_result)
+    elif selection=="3":
+        divis_result=c1.division()
+        print("Division: ", divis_result)
+    elif selection=="4":
+        subs_result=c1.substraction()
+        print("Substraction: ", subs_result)
